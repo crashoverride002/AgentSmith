@@ -1,0 +1,61 @@
+﻿@model IEnumerable<GeoMask.Models.MaskLocation>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+
+    <section class="contact">
+        <header>
+            <h3>Map</h3>
+        </header>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAYfnfMYjmokDASX5s1RCurgklsm1f7wjw" async defer></script>
+        <script>
+            window.onload = function initialize() {
+
+
+            }
+
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: { lat: 44.540, lng: -78.546 },
+                    zoom: 2,
+                    height: 500
+                });
+                                
+
+                var model = @Html.Raw(Json.Encode(Model));
+                $.each(model, function (index, item) {
+                    var name = item.name;
+                    var point = { lat: Number(item.latitude), lng: Number(item.longitude)};
+                    var marker = new google.maps.Marker({
+                        position: point,
+                        title: name
+                    });
+                    marker.setMap(map);
+                });
+            }
+        </script>
+
+        <div style="height: 500px">
+            <div id="map" class="well well-lg">
+
+            </div>
+        </div>
+
+    </section>
+
+

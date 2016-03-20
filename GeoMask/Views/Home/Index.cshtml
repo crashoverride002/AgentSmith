@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+
+}
+
+<script>
+    $('#accordion').collapse()
+</script>
+
+
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <div class="panel panel-default">
+                <div class="list-group">
+                    <div href="#" class="list-group-item">
+                            <img src="~/MaskPics/423_1_large.jpg" height="100" />
+                            <a href="/Profile/AgentSmith">Agent Smith</a> "Snapped!" in <a href="/Geo/Contintent/Antartica">Antartica</a> by <a href="/Profile/PinguPenguin324">PinguPenguin324</a>             
+
+                            <h4 class="badge">56 iLikes</h4>
+
+                        <!-- Single button -->
+                        <div class="btn-group-xs pull-right">
+                            <button type="button" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">OneDrive</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div href="#" class="list-group-item">
+                        <img src="https://scontent.xx.fbcdn.net/hprofile-xft1/v/t1.0-1/p160x160/12809621_10153304254976933_7714489636850223970_n.jpg?oh=5f3dc76f0d2571094d8e062432532f62&oe=578AB9D6" height="100" />
+                            <a href="/Profile/Natalie.Marsh">Natalie M</a> "Snapped!" in <a href="/Geo/City/Sacremento">Sacremento</a> by <a href="/Profile/Chris.Mendez">ChrisM</a>     
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="badge">656465</span>
+                                    North America
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="badge">4567</span>
+                                        Canada
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge">123</span>
+                                        USA
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge">12336</span>
+                                        Mexico
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    South America
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="badge">4567</span>
+                                        Panama
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge">123</span>
+                                        Brazil
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge">12336</span>
+                                        Argentina
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Europe
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="badge">4567</span>
+                                        United Kingdom
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge">123</span>
+                                        France
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge">12336</span>
+                                        Germany
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Instructions</div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                Create your account for free
+                            </a>
+                            <a href="#" class="list-group-item">
+                                Receive your mask of anyone you like (celebrity, sports-person, friend, enemy)
+                            </a>
+                            <a href="#" class="list-group-item">
+                                Take a picture at any location with your mask in the picture, more creative the better.
+                            </a>
+                            <a href="#" class="list-group-item">
+                                Upload to snapped!
+                            </a>
+                            <a href="#" class="list-group-item">
+                                Enjoy other peoples creativity
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Latest Sightings</div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">Manchester, UK</h4>
+                                <p class="list-group-item-text">Agent Smith snapped in Manchester, UK</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">Sacremento, CA, USA</h4>
+                                <p class="list-group-item-text">Natalie snapped in Sacremento, USA</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <img src="~/MaskPics/423_1_large.jpg" height="100" />
+            <a href="/Profile/AgentSmith">Agent Smith</a> "Snapped!" in <a href="/Geo/Contintent/Antartica">Antartica</a> by <a href="/Profile/PinguPenguin324">PinguPenguin324</a>
+        </div>
+    </div>
+</div>
